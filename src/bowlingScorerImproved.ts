@@ -50,4 +50,4 @@ export const calculateBonuses = (frames: number[][]): number[] => {
   return scoresWithBonuses;
 };
 
-//Overall, I find this approach much more human-readable than the given example. It also fixes some edge cases.
+//Overall, I find this approach much more human-readable than the given example. It also fixes an edge case.
