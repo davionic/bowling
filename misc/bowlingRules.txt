@@ -1,0 +1,30 @@
+Bowling Score Calculator
+Goal
+Write a basic bowling game scoring calculator, which accepts individual rolls and provides the correct score for them.
+
+How bowling scoring works
+A bowling game is broken down into multiple attempts to knock down 10 pins with your ball. 
+Each turn you get two attempts to knock down all 10 pins. Each turn is called a "frame" during scoring.
+
+Open frames
+If you do not knock down all 10 pins in a frame, it is considered open.
+
+The score of the frame is simply the number of pins knocked down in total.
+
+Spares
+If you knock down all 10 pins using both rolls of a frame, you get a spare.
+
+A spare earns 10 points, plus the number of pins knocked down in your next roll.
+
+Strikes
+If you knock down all 10 pins in a single roll, you get a strike.
+
+Strikes earn 10 points, plus the sum of your next two rolls.
+
+The 10th frame
+Scoring the 10th frame works slightly differently
+
+If you roll a strike on the first attempt, the pins are reset and you get two more rolls
+If you roll a spare in the first two attempts, the pins are reset and you get 1 additional roll
+If you roll an open frame, the your turn is over
+There are no modifiers applied to the 10th frame, the score is the number of pins knocked down.
