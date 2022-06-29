@@ -12,8 +12,10 @@ export const convertToFrames = (scores: number[]): number[][] => {
   let frameRollNumber: 1 | 2 = 1;
   let scoresInFrames: number[][] = [];
 
-  //In my opinion, this syntax is much cleaner than reduce() for this use case
   scores.forEach((score, i) => {
+    //if a 10 is rolled on 1st frame, add a strike frame [10], 
+    //otherwise add the current and next roll as a frame and increment frameRollNumber, 
+    //or add nothing and reset incrementor if on the second roll of a frame.
     if (score === 10 && frameRollNumber === 1) {
       scoresInFrames.push([10]);
     } else if (frameRollNumber === 1) {
